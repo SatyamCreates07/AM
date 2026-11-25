@@ -915,8 +915,6 @@ def divided_diff(x, y):
             table[i][j] = (table[i + 1][j - 1] - table[i][j - 1]) / (x[i + j] - x[i])
     return table
 
-print(table)
-
 def newton_interpolation(x, y, value):
     """Estimate y at 'value' using Newton's divided-difference formula."""
     n = len(x)
